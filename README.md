@@ -1,26 +1,37 @@
-# Sleep, Screen Time, and Academic Performance: 
+## Project Title
+Analyzing the Impact of Sleep Hours and Study Habits on Student Performance
 
-## Project Overview: 
-This project investigates the relationship between students sleep habits, late-night screen-time, and  academic performance. The  goalis to understand how lifestyle factors such as sleep durations and phone usage may affect acedemic outcomes. 
+## Motivation
+Student academic performance is influenced by various factors, including study habits, previous academic success, and lifestyle behaviors such as sleep. Among these, sleep is often overlooked despite its importance for cognitive function and concentration. This project aims to investigate how sleep duration, along with other study-related factors, affects student performance.
 
-## Motivation: 
-University students often experience irregular sleep schedules and high screen-time during late hours. These behaviors impact on concentration, energy levels, and class performance. This project aims to analyze these relationships using data-driven methods.
+## Data Source and Collection
+The dataset used in this project is obtained from Kaggle and contains information about students' study habits and performance metrics. The dataset includes variables such as hours studied, previous scores, extracurricular activities, sleep hours, and the number of practice questions completed.
 
-## Data Sources:
--*Primary source Dataset: Public dataset obtained from Kaggle (it includes student lifestyle, sleep, academic data)
--*Additional Data Source: Derived features and possibly small personal observations such as screen time patterns for enrichment.
+Since the dataset is publicly available, additional enrichment will be achieved through feature engineering and extended analysis of relationships between variables.
 
-## Features:
-* Sleep duration,
-* Bedtime / wake time,
-* Screen-time (for late-night usage),
-* Study hours,
-* Stress level,
-* Academic performance (for example; exam score or GPA),
+## Data Characteristics
+The dataset consists of approximately 10,000 observations and includes both numerical and categorical variables. Key features include:
+- Hours Studied
+- Previous Scores
+- Sleep Hours
+- Extracurricular Activities
+- Sample Question Papers Practiced
+- Performance Index (target variable)
 
-## Planned Analysis:
-* Data cleaning and preprocessing,
-* Exploratory Data Analysis (applying EDA),
-* Statistical analysis (correlation, hypothesis testing),
-* Machine learning models (regression or classification),
+The dataset does not contain missing values and is suitable for both statistical analysis and machine learning applications.
 
+## Research Questions
+- Does sleep duration have a measurable impact on student performance?
+- How strongly do study habits influence academic success?
+- Which variable is the most important predictor of performance?
+- Do extracurricular activities affect performance outcomes?
+
+## Planned Analysis
+The project will begin with data cleaning and preprocessing, followed by exploratory data analysis (EDA) to understand variable distributions and relationships.
+
+Statistical analysis methods such as correlation analysis and hypothesis testing will be applied to examine relationships between variables.
+
+Finally, machine learning techniques, particularly regression models, will be used to predict student performance based on the given features.
+
+## Expected Outcome
+The project is expected to identify the most significant factors affecting student performance and evaluate the role of sleep in academic success. The findings may provide insights into how students can optimize their study habits and daily routines for better performance.
