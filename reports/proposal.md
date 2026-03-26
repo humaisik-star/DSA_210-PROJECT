@@ -1,7 +1,7 @@
 # Project Proposal: 
 
 ## Project Title:
-Student Performance Analysis Based on Sleep and Study Habits (analyze the how university students irregular behaviors affect their academic performances.)
+Student Performance Analysis Based on Sleep and Study Habits (analyzing how irregular behaviors of university students affect their academic performance)
 
 ## Motivation: 
 
