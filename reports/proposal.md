@@ -3,8 +3,6 @@
 ## Project Title:
 Student Performance Analysis Based on Sleep and Study Habits (analyze the how university students irregular behaviors affect their academic performances.)
 
----
-
 ## Motivation: 
 
 Students' academic performance is influenced by multiple factors such as study habits, previous academic results, and lifestyle behaviors like sleep patterns. Understanding how these variables interact can help identify key factors that contribute to better academic outcomes. This project aims to explore these relationships using data-driven methods.
@@ -30,7 +28,6 @@ Additionally, a small personal dataset may be collected to enrich the analysis, 
 The main dataset is publicly available and will be downloaded from Kaggle. The personal dataset will be manually constructed based on daily observations of sleep and screen time patterns.
 
 
-
 ## Planned Analysis:
 
 The project will follow a standard data science pipeline:
@@ -43,10 +40,12 @@ The project will follow a standard data science pipeline:
 
 The relationships between sleep, study habits, and academic performance will be analyzed in details both among university students also peersonally my own infos. 
 
+## Enrichment Part: 
+
+- In later stages, the analysis will be enriched with a small personal dataset based on sleep and screen time observations. (The main aim of this part is highly associated with enhance and support the kaggle datas with own irregular lifestyle examples.)
+
 
 ## Expected Outcomes: 
-
-It is expected that study related variables such as Hours Studied and Previous Scores will have a strong impact on performance. Sleep may also have a nagative effect in terms of possibly weaker.
 
 The project also aims to identify which factors are most influential in predicting student performance.
 
