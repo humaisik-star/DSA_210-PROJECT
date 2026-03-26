@@ -35,3 +35,6 @@ Finally, machine learning techniques, particularly regression models, will be us
 
 ## Expected Outcome
 The project is expected to identify the most significant factors affecting student performance and evaluate the role of sleep in academic success. The findings may provide insights into how students can optimize their study habits and daily routines for better performance.
+
+## Status:
+Proposal submitted. Exploratory Data Analysis completed.
