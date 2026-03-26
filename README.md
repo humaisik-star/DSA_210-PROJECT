@@ -38,3 +38,6 @@ The project is expected to identify the most significant factors affecting stude
 
 ## Status:
 Proposal submitted. Exploratory Data Analysis completed.
+
+## Notebooks and Usage: 
+- [EDA Notebook](notebooks/01_data_overview.ipynb)
