@@ -1,7 +1,7 @@
 ## Project Title: 
 Analyzing the Impact of Sleep Hours and Study Habits on Student Performance (which factors affect studets academic lifestyle)
 
-## Motivation: 
+## Motivation 
 Student academic performance is influenced by various factors, including study habits, previous academic success, and lifestyle behaviors such as sleep. Among these, sleep is often overlooked despite its importance for cognitive function and concentration. This project aims to investigate how sleep duration, along with other study-related factors, affects student performance.
 
 ## Data Source and Collection: 
