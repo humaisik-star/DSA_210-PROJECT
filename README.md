@@ -39,5 +39,22 @@ The project is expected to identify the most significant factors affecting stude
 ## Status:
 Proposal submitted. Exploratory Data Analysis completed.
 
-## Notebooks and Usage: 
-- [EDA Notebook](notebooks/01_data_overview.ipynb)
+## Notebooks and Usage:
+- [EDA Notebook](notebooks/01_data_overview.ipynb) - Exploratory Data Analysis
+- [Hypothesis Tests Notebook](notebooks/02_hypothesis_tests.ipynb) - H1-H4 Statistical Tests + Enrichment
+
+## Hypotheses
+- **H1:** Students sleeping 7+ hours perform significantly better (t-test)
+- **H2:** Hours studied positively correlates with performance (Pearson)
+- **H3:** Extracurricular activities do not significantly affect performance (t-test)
+- **H4:** Sleep quality benchmark correlates with performance (Pearson)
+
+## AI Tool Disclosure
+This project used Claude (Anthropic) as an AI assistant for:
+- Hypothesis design and statistical test selection
+- Code structuring for EDA and hypothesis tests
+- Enrichment strategy (Sleep Health dataset integration)
+
+All outputs were reviewed and verified by the student.
+Prompts and generated outputs are documented in the project report.
+
