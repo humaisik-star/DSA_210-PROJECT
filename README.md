@@ -20,6 +20,58 @@ The dataset consists of approximately 10,000 observations and includes both nume
 
 The dataset does not contain missing values and is suitable for both statistical analysis and machine learning applications.
 
+## Data Enrichment Strategy: Sleep Health & Lifestyle Dataset Integration
+
+### Challenge
+The Student Performance dataset lacks detailed sleep quality metrics. The Sleep Health & Lifestyle dataset contains rich sleep quality information but represents a different population. These datasets **do not share a common student identifier**, making direct joining impossible.
+
+### Solution: Benchmark Mapping Methodology
+Rather than attempting a direct merge, we use a **benchmark mapping** approach:
+
+1. **Benchmark Creation:** Aggregate sleep quality metrics from the Sleep Health dataset by sleep duration
+   - For each sleep hour level (5, 6, 7, 8 hours, etc.)
+   - Calculate mean sleep quality score
+   - Calculate mean stress level
+   - Track sample size (number of observations per sleep hour)
+
+2. **Feature Enrichment:** Match students in the student performance dataset to these benchmarks
+   - Key: Student's reported "Sleep Hours" 
+   - Lookup: Find matching sleep duration in benchmarks
+   - Add: Sleep Quality Benchmark and Stress Benchmark columns
+   - Handle missing values via mean imputation
+
+3. **New Features Added:**
+   - `Sleep_Quality_Benchmark`: Mean sleep quality score for students' reported sleep duration
+   - `Stress_Benchmark`: Mean stress level for students' reported sleep duration
+   - These represent how a student's sleep duration compares to population norms
+
+### Documented Assumptions
+✓ Sleep hours are reliably self-reported in both datasets  
+✓ Sleep quality measurement scales are comparable across datasets (1-10 scale in both)  
+✓ Rounding sleep duration to nearest hour appropriately captures patterns  
+✓ Sleep quality norms from one population are reasonably transferable to student population  
+
+### Critical Limitations
+⚠️ **Population Differences:** Sleep Health dataset may include non-students (workers, retirees) with different demographics  
+⚠️ **No Individual Matching:** Benchmarks represent population-level patterns, not individual correspondences  
+⚠️ **Aggregation Loss:** Mean benchmark masks variation within sleep hour categories  
+⚠️ **Correlation ≠ Causation:** Benchmarks show associations, not causal relationships  
+⚠️ **Imputation Bias:** Rare sleep durations filled with mean, creating artificial uniformity  
+
+### Validation: Enrichment Contribution
+Before including the enriched features in analysis, we validated they provide genuine new information:
+- Sleep Quality Benchmark correlates with Performance Index (not just noise)
+- Benchmark captures different variation than raw Sleep Hours alone
+- Features are not highly redundant (r < 0.85)
+- Enrichment adds a new dimension: *population norms*, not just raw duration
+
+**Result:** The enrichment provides meaningful value and is retained for hypothesis testing (H4).
+
+### Code Implementation
+The data enrichment pipeline is documented in:
+- `src/data_enrichment.py` - Functions for benchmark creation and enrichment
+- `notebooks/02_hypothesis_tests.ipynb` - Notebook with full enrichment methodology and validation
+
 ## Research Questions:
 - Does sleep duration have a measurable impact on student performance?
 - How strongly do study habits influence academic success?
