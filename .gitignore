@@ -1,0 +1,25 @@
+# Raw data files (private research data)
+data/raw/*.csv
+
+# Python environment
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+.jupyter/
+
+# OS
+.DS_Store
+.env
